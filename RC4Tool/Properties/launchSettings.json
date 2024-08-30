@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RC4Tool": {
+      "commandName": "Project",
+      "commandLineArgs": "encrypt --file \"C:\\Users\\ASUS\\Desktop\\buffer\\1.png\" --password \"a\" --savePassword trUe"
+    }
+  }
+}
