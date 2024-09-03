@@ -2,7 +2,7 @@
   "profiles": {
     "RC4Tool": {
       "commandName": "Project",
-      "commandLineArgs": "encrypt --file \"C:\\Users\\ASUS\\Desktop\\buffer\\1.png\" --password \"a\" --savePassword trUe"
+      "commandLineArgs": "autoEncrypt --file \"C:\\Users\\ASUS\\Desktop\\buffer\\1.png.rc4pak\""
     }
   }
 }
