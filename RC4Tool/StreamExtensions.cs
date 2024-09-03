@@ -1,8 +1,8 @@
 ﻿namespace RC4Tool;
 
-public static class FileStreamExtensions
+public static class StreamExtensions
 {
-    public static IEnumerable<byte> ReadBytes(this FileStream fs)
+    public static IEnumerable<byte> ReadBytes(this Stream fs)
     {
         while(fs.CanRead)
         {
@@ -12,7 +12,7 @@ public static class FileStreamExtensions
         }
     }
 
-    public static void WriteBytes(this FileStream fs, IEnumerable<byte> bytes)
+    public static void WriteBytes(this Stream fs, IEnumerable<byte> bytes)
     {
         foreach(var b in bytes)
         {
