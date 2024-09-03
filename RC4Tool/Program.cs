@@ -113,7 +113,7 @@ internal class Program
         else newFilePath = fileInfo.FullName + ".rc4";
         using FileStream fs2 = new(newFilePath, FileMode.Create);
         fs2.WriteBytes(rc4.Encrypt(fs.ReadBytes()));
-        if (isSavePassword) File.WriteAllBytes(newFilePath + ".password.txt", password);
+        if (isSavePassword) File.WriteAllBytes(newFilePath + ".Password", password);
     }
 
     static void AutoEncrypt(FileInfo fileInfo)
