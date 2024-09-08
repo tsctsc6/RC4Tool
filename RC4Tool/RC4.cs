@@ -12,7 +12,6 @@ public class RC4
     public RC4(byte[] Key)
     {
         Init(Key);
-        Reset();
     }
 
     [MemberNotNull(nameof(Sbox), nameof(Kbox))]
@@ -31,10 +30,6 @@ public class RC4
             j = (j + Sbox[i] + Kbox[j]) % 256;
             (Sbox[j], Sbox[i]) = (Sbox[i], Sbox[j]);
         }
-    }
-
-    public void Reset()
-    {
         i = 0;
         j = 0;
     }
